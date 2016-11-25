@@ -1,0 +1,13 @@
+.overflow-single-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*其中的数字三为需要省略的行数*/
+.overflow-multline-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

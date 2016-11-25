@@ -10,7 +10,6 @@ input{
 body{
     line-height: 1.4;
     margin: 0;
-    background-color: #f7f7f8;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -67,7 +66,7 @@ header{
 
 .mark__content{
     margin: 10px 5px 0;
-    border: 1px solid #e1e1e1;
+    border: 1px solid rgba(208,212,217,.5);
     background-color: #fff;
 }
 
