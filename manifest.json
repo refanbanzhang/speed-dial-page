@@ -1,0 +1,62 @@
+{
+    "manifest_version": 2,
+
+    "name": "Getting started example",
+    "description": "This extension shows a Google Image search result for the current page",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": {
+            "19": "img/icon.png",
+            "38": "img/icon.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Click here!"
+    },
+
+    "icons": {
+        "16": "img/icon.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ],
+    //  选项页面
+    "options_page": "options.html",
+    //  载入页面的脚本
+    "content_scripts": [
+        {
+            "matches": ["*://www.baidu.com/"],
+            "js": ["js/cannot_touch.js"]
+        }
+    ],
+
+    // 定义扩展需要向 Chrome 申请的权限
+    "permissions": [
+        "http://api.wunderground.com/api/",
+        "http://api.openweathermap.org/data/2.5/forecast?q=*",
+        "http://v.juhe.cn/weather/index",
+        "tabs",
+        "activeTab",
+        "notifications",
+        "storage",
+        "unlimitedStorage",
+        "contextMenus",
+        "bookmarks",
+        "history"
+    ],
+
+    "background": {
+        "scripts": ["js/lib/jQuery.js", "js/background.js"],
+        "persistent": true
+    },
+
+    // chrome_url_overrides 属性可以自定义的页面替换 Chrome 相应默认的页面
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    //  启用多功能框
+    "omnibox": { "keyword" : "hamster" }
+}

@@ -1,0 +1,34 @@
+/*八栏*/
+@media(max-width: 1920px) {
+    .mark__item{
+        width: 12.5%;
+    }
+}
+
+/*六栏*/
+@media(max-width: 1600px) {
+    .mark__item{
+        width: 16.6667%;
+    }
+}
+
+/*四栏*/
+@media(max-width: 980px) {
+    .mark__item{
+        width: 25%;
+    }
+}
+
+/*两栏*/
+@media(max-width: 600px) {
+    .mark__item{
+        width: 50%;
+    }
+}
+
+/*一栏*/
+@media(max-width: 400px) {
+    .mark__item{
+        width: 100%;
+    }
+}

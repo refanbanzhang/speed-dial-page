@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iMark</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/mousemenu.css">
+    <link rel="stylesheet" type="text/css" href="css/mask.css">
+</head>
+<body>
+    <!--<header>-->
+        <!--<div class="container">-->
+            <!--<h1>iMark</h1>-->
+        <!--</div>-->
+    <!--</header>-->
+
+
+    <div id="main">
+        <div class="container">
+            <div class="mark"></div>
+        </div>
+    </div>
+
+
+    <div id="mousemenu">
+        <div class="mousemenu__list">
+            <div class="mousemenu__item mousemenu__item--edit">编辑</div>
+            <div class="mousemenu__item mousemenu__item--destroy">删除</div>
+            <div class="mousemenu__item mousemenu__item--refresh">刷新图片</div>
+        </div>
+    </div>
+
+    <div id="mask">
+        <div class="mask__edit">
+            <div class="mask__header">说好的编辑</div>
+            <div class="mask__main">
+                <div class="mask__title">
+                    <span class="mask__label">标题</span>
+                    <input type="text" value="百度一下">
+                </div>
+                <div class="mask__url">
+                    <span class="mask__label">地址</span>
+                    <input type="text" value="www.baidu.com">
+                </div>
+                <div class="mask__photo">
+                    <span class="mask__label">图片</span>
+                    <div class="mask__img"><img src="img/1.jpg"></div>
+                </div>
+                <div class="mask__footer">
+                    <input type="button" value="取消">
+                    <input type="button" value="保存">
+                </div>
+            </div>
+        </div>
+        <div class="mask__close"></div>
+    </div>
+
+<!--     <footer>
+        <div class="container">footer</div>
+    </footer> -->
+
+<script src="js/lib/jQuery.js"></script>
+<script src="js/lib/onfire.min.js"></script>
+<script src="js/db.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

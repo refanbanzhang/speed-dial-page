@@ -1,0 +1,17 @@
+body, input{
+    font-weight: 300;
+    font-family: 'Candara', 'Microsoft JhengHei';
+}
+
+body{
+    width: 276px;
+}
+
+table{
+
+}
+
+td, th{
+    padding: 5px 10px;
+    border: 1px solid #e1e1e1;
+}
