@@ -61,8 +61,8 @@ window.onload = function(){
     
 
 
-    chrome.browserAction.setBadgeBackgroundColor({color: '#333'});
-    chrome.browserAction.setBadgeText({text: 'Dog'});
+    // chrome.browserAction.setBadgeBackgroundColor({color: '#333'});
+    // chrome.browserAction.setBadgeText({text: 'Dog'});
 
     chrome.notifications.create('notifiId', {
         type: "basic", 
