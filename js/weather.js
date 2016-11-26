@@ -16,7 +16,6 @@ $(function(){
     var city = localStorage.getItem(CITYKEY) || '深圳';
     var url  = 'http://v.juhe.cn/weather/index?cityname=' + encodeURIComponent(city) + '&dtype=&format=&key=7d0bdaa5f0c93c8216599590e37892bb';
 
-
     function formatResult(result){
         result = JSON.parse(result);
         var str = `<table><tr>

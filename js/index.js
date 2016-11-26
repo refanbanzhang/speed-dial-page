@@ -93,9 +93,37 @@
                                     </div>
                                </div></a>`;
 
+                var itemStr = `<div class="mark__item">
+                                    <div class="mark__content">
+                                        <div class="mark__photo" style="background-image: url(` + item.photo + `)"></div>
+                                        <a href="` + item.url + `">
+                                            <div class="mark__hover"></div>
+                                        </a>
+                                        <div class="mark__title">
+                                            <div class="mark__title-text overflow-single-text">` + item.title + `</div>
+                                            <div class="mark__options">
+                                                <ul>
+                                                    <li><span class="mark__options-edit"></span></li>
+                                                    <li><span class="mark__options-del"></span></li>
+                                                    <li><span class="mark__options-refresh"></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`;
                 this.$mark.append(itemStr);
             }
         };
+
+
+        
+
+
+
+
+
+
+
 
         var myMark = new MyMark();
 

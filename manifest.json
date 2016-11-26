@@ -25,12 +25,6 @@
     //  选项页面
     "options_page": "options.html",
     //  载入页面的脚本
-    "content_scripts": [
-        {
-            "matches": ["*://www.baidu.com/"],
-            "js": ["js/cannot_touch.js"]
-        }
-    ],
 
     // 定义扩展需要向 Chrome 申请的权限
     "permissions": [
